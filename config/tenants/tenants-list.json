@@ -6,6 +6,9 @@
   "gate" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  }, {
+    "name" : "onboard",
+    "state" : "ACTIVE"
   } ],
   "uaa" : [ {
     "name" : "xm",
