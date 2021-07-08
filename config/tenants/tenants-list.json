@@ -13,6 +13,9 @@
   "uaa" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  }, {
+    "name" : "onboard",
+    "state" : "ACTIVE"
   } ],
   "timeline" : [ {
     "name" : "xm",
