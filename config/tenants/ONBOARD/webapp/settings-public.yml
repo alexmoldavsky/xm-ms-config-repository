@@ -1,0 +1,10 @@
+---
+logoUrl: '../assets/img/logo-xm-online.png'
+name: XM^online
+theme: teal
+langs:
+    - en
+    - ru
+sidebar:
+    hideAdminConsole: true
+    hideApplication: false
