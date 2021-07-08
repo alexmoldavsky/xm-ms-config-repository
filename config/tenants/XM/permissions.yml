@@ -501,7 +501,7 @@ entity:
     reactionStrategy: null
   - privilegeKey: "CONTENT.SEARCH"
     disabled: true
-    deleted: false
+    deleted: true
     envCondition: null
     resourceCondition: null
     reactionStrategy: null
