@@ -40,6 +40,9 @@
     "state" : "ACTIVE"
   } ],
   "dashboard" : [ {
+    "name" : "onboardtest",
+    "state" : "ACTIVE"
+  }, {
     "name" : "xm",
     "state" : "ACTIVE"
   }, {
