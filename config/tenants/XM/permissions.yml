@@ -1033,7 +1033,7 @@ timeline:
     reactionStrategy: null
   - privilegeKey: "TIMELINE.PROFILE.GET_LIST.ITEM"
     disabled: false
-    deleted: false
+    deleted: true
     envCondition: null
     resourceCondition: null
     reactionStrategy: null
