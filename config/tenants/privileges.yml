@@ -941,42 +941,58 @@ entity:
   - "xmEntitySpec"
   customDescription: null
 gate:
+- key: "GATE.MONITORING.SERVICE.GET_HEALTH"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get heath of each service instance from endpoint\
+    \ /management/health"
+- key: "GATE.MONITORING.SERVICE.GET_LIST"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get list of service instances"
+- key: "GATE.MONITORING.SERVICE.GET_METRIC"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get all metrics of each service instance"
 - key: "GATE.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get gate Spring active profiles"
 - key: "GATE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to add a new gate tenant"
 - key: "GATE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete gate tenant"
 - key: "GATE.TENANT.GET_LIST"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get all gate tenants"
 - key: "GATE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get gate tenant"
 - key: "GATE.TENANT.UPDATE"
   description: {}
   resources:
   - "state"
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to update gate tenant"
 - key: "ROUTE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
-  customDescription: null
+  customDescription: "Privilege to get the active routes"
 timeline:
 - key: "TIMELINE.GET_LIST"
   description: {}
