@@ -1,119 +1,159 @@
 ---
 balance:
+- key: "BALANCE.CHARGING"
+  description: {}
+  resources:
+  - "chargingRequest"
+  customDescription: "Privilege to charging the balance"
 - key: "BALANCE.CREATE"
   description: {}
   resources:
   - "balance"
-  customDescription: null
+  customDescription: "Privilege to create a new balance"
 - key: "BALANCE.DELETE"
   description: {}
   resources:
   - "balance"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the balance by id"
 - key: "BALANCE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all balances which matches the criteria from\
+    \ the database"
 - key: "BALANCE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the balance by id"
 - key: "BALANCE.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get balance Spring active profiles"
+- key: "BALANCE.RELOAD"
+  description: {}
+  resources:
+  - "reloadRequest"
+  customDescription: "Privilege to reload the balance"
 - key: "BALANCE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to add a new balance tenant"
 - key: "BALANCE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete balance tenant by tenantKey"
 - key: "BALANCE.TENANT.GET_LIST"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get all balance tenants"
 - key: "BALANCE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get balance tenant"
 - key: "BALANCE.TENANT.UPDATE"
   description: {}
   resources:
   - "state"
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to update balance tenant"
+- key: "BALANCE.TRANSFER"
+  description: {}
+  resources:
+  - "transferRequest"
+  customDescription: "Privilege to transfer the balance"
 - key: "BALANCE.UPDATE"
   description: {}
   resources:
   - "balance"
   - "newBalance"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing balance"
+- key: "BALANCE_HISTORY.SEARCH_BY_DATE"
+  description: {}
+  resources:
+  - "request"
+  customDescription: "Privilege to search balance history by date"
+- key: "BALANCE_HISTORY.SEARCH_BY_TEMPLATE"
+  description: {}
+  resources:
+  - "templateName"
+  - "params"
+  customDescription: "Privilege to search balance history by templateName"
 - key: "METRIC.CREATE"
   description: {}
   resources:
   - "metric"
-  customDescription: null
+  customDescription: "Privilege to create a new metric"
 - key: "METRIC.DELETE"
   description: {}
   resources:
   - "metric"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the metric by id"
 - key: "METRIC.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all metrics which matches the criteria from\
+    \ the database"
 - key: "METRIC.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the metric by id"
 - key: "METRIC.UPDATE"
   description: {}
   resources:
   - "metric"
   - "id"
   - "newMetric"
-  customDescription: null
+  customDescription: "Privilege to updates an existing metric"
 - key: "POCKET.CREATE"
   description: {}
   resources:
   - "pocket"
-  customDescription: null
+  customDescription: "Privilege to create a new pocket"
 - key: "POCKET.DELETE"
   description: {}
   resources:
   - "id"
   - "pocket"
-  customDescription: null
+  customDescription: "Privilege to delete the pocket by id"
 - key: "POCKET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all pockets which matches the criteria from\
+    \ the database"
 - key: "POCKET.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the pocket by id"
 - key: "POCKET.UPDATE"
   description: {}
   resources:
   - "newPocket"
   - "id"
   - "pocket"
-  customDescription: null
+  customDescription: "Privilege to updates an existing pocket"
+- key: "POCKET_HISTORY.SEARCH_BY_DATE"
+  description: {}
+  resources:
+  - "request"
+  customDescription: "Privilege to search pocket history by date"
+- key: "POCKET_HISTORY.SEARCH_BY_TEMPLATE"
+  description: {}
+  resources:
+  - "templateName"
+  - "params"
+  customDescription: "Privilege to search pocket history by templateName"
 config:
 - key: "CONFIG.ADMIN.CREATE"
   description: {}
