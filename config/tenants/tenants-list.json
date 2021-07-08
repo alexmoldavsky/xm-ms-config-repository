@@ -14,6 +14,9 @@
     "state" : "ACTIVE"
   } ],
   "uaa" : [ {
+    "name" : "onboardtest",
+    "state" : "ACTIVE"
+  }, {
     "name" : "xm",
     "state" : "ACTIVE"
   }, {
