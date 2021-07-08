@@ -30,6 +30,9 @@
   "dashboard" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  }, {
+    "name" : "onboard",
+    "state" : "ACTIVE"
   } ],
   "balance" : [ {
     "name" : "xm",
