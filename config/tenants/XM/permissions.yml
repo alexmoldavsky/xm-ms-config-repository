@@ -1257,7 +1257,7 @@ uaa:
     reactionStrategy: null
   - privilegeKey: "SOCIAL.PROVIDERS.GET_LIST"
     disabled: false
-    deleted: false
+    deleted: true
     envCondition: null
     resourceCondition: null
     reactionStrategy: null
@@ -1269,7 +1269,7 @@ uaa:
     reactionStrategy: null
   - privilegeKey: "SOCIAL.SIGN_UP"
     disabled: false
-    deleted: false
+    deleted: true
     envCondition: null
     resourceCondition: null
     reactionStrategy: null
