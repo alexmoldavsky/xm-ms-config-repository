@@ -1171,272 +1171,298 @@ uaa:
 - key: "ACCOUNT.ACTIVATE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to activate the registered user"
 - key: "ACCOUNT.CHECK_AUTH"
   description: {}
   resources:
   - "request"
-  customDescription: null
+  customDescription: "Privilege to check if the user is authenticated"
 - key: "ACCOUNT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the current user"
 - key: "ACCOUNT.LOGIN.UPDATE"
   description: {}
   resources:
   - "newUser"
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to updates an existing Account logins"
 - key: "ACCOUNT.PASSWORD.RESET"
   description: {}
   resources:
   - "mail"
-  customDescription: null
+  customDescription: "Privilege to send an email to reset the password of the user"
 - key: "ACCOUNT.PASSWORD.RESET.CHECK"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to check if key is valid"
 - key: "ACCOUNT.PASSWORD.RESET.FINISH"
   description: {}
   resources:
   - "keyAndPassword"
-  customDescription: null
+  customDescription: "Privilege to reset the password of the user by link"
+- key: "ACCOUNT.PASSWORD.RESET_BY_TYPE"
+  description: {}
+  resources:
+  - "login"
+  customDescription: "Privilege to reset password and start customizable reset flow"
 - key: "ACCOUNT.PASSWORD.UPDATE"
   description: {}
   resources:
   - "password"
-  customDescription: null
+  customDescription: "Privilege to changes the current user's password"
 - key: "ACCOUNT.REGISTER"
   description: {}
   resources:
   - "request"
   - "user"
-  customDescription: null
+  customDescription: "Privilege to register the user"
 - key: "ACCOUNT.RESET_ACTIVATION"
   description: {}
   resources:
   - "login"
-  customDescription: null
+  customDescription: "Privilege to reset activation key"
 - key: "ACCOUNT.TFA.AVAILABLE_OTP_CHANNEL_SPECS"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get tfaOtpChannelSpecs"
 - key: "ACCOUNT.TFA.DISABLE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to disable TFA for current loged in user"
 - key: "ACCOUNT.TFA.ENABLE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to enable TFA for current loged in user"
 - key: "ACCOUNT.UPDATE"
   description: {}
   resources:
   - "user"
-  customDescription: null
+  customDescription: "Privilege to update the current user information"
 - key: "AUDIT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the auditEvents"
 - key: "AUDIT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get an AuditEvent by id"
 - key: "CAPTCHA.GET"
   description: {}
   resources:
   - "request"
-  customDescription: null
+  customDescription: "Privilege to get captcha"
 - key: "CLIENT.CREATE"
   description: {}
   resources:
   - "client"
-  customDescription: null
+  customDescription: "Privilege to create a new client"
 - key: "CLIENT.DELETE"
   description: {}
   resources:
   - "client"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the client by id"
 - key: "CLIENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the clients"
 - key: "CLIENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the clients"
 - key: "CLIENT.UPDATE"
   description: {}
   resources:
   - "newClient"
   - "client"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing client"
+- key: "LDAP.SEARCH"
+  description: {}
+  resources:
+  - "templateKey"
+  customDescription: "Privilege to ldap search by templateKey"
 - key: "ROLE.CREATE"
   description: {}
   resources:
   - "role"
-  customDescription: null
+  customDescription: "Privilege to create a new role"
 - key: "ROLE.DELETE"
   description: {}
   resources:
   - "roleKey"
-  customDescription: null
+  customDescription: "Privilege to delete the role by roleKey"
 - key: "ROLE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
-  customDescription: null
+  customDescription: "Privilege to get all roles"
 - key: "ROLE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the role by roleKey"
 - key: "ROLE.MATRIX.GET"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get role matrix"
 - key: "ROLE.MATRIX.UPDATE"
   description: {}
   resources:
   - "roleMatrix"
-  customDescription: null
+  customDescription: "Privilege to update permissions by role matrix"
 - key: "ROLE.UPDATE"
   description: {}
   resources:
   - "role"
-  customDescription: null
-- key: "SOCIAL.PROVIDERS.GET_LIST"
+  customDescription: "Privilege to update an existing role"
+- key: "SOCIAL.ACCEPT_CONNECTION"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to social accept connection"
 - key: "SOCIAL.SIGN_IN"
   description: {}
   resources: []
-  customDescription: null
-- key: "SOCIAL.SIGN_UP"
-  description: {}
-  resources: []
-  customDescription: null
+  customDescription: "Privilege to social sign in"
 - key: "TENANT.LOGIN.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get uaa login properties"
 - key: "TENANT.LOGIN.UPDATE"
   description: {}
   resources:
   - "loginsYml"
-  customDescription: null
+  customDescription: "Privilege to update logins yml"
 - key: "TENANT.LOGIN.VALIDATE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to validate logins yml"
 - key: "UAA.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get uaa Spring active profiles"
 - key: "UAA.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to add a new uaa tenant"
 - key: "UAA.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete uaa tenant by tenantKey"
 - key: "UAA.TENANT.GET_LIST"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get all uaa tenants"
 - key: "UAA.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get uaa tenant"
 - key: "UAA.TENANT.PROPERTIES.UPDATE"
   description: {}
   resources:
   - "uaaYml"
-  customDescription: null
+  customDescription: "Privilege to update uaa yml"
 - key: "UAA.TENANT.PROPERTIES.VALIDATE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to vaalidate uaa yml"
 - key: "UAA.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
-  customDescription: null
+  customDescription: "Privilege to update uaa tenant"
+- key: "USER.BLOCK"
+  description: {}
+  resources: []
+  customDescription: "Privilege to blocks user"
+- key: "USER.CHANGE.ROLE"
+  description: {}
+  resources:
+  - "newUser"
+  - "id"
+  - "user"
+  customDescription: "Privilege to change roleKey for user"
 - key: "USER.CREATE"
   description: {}
   resources:
   - "user"
-  customDescription: null
+  customDescription: "Privilege to create a new user"
 - key: "USER.DELETE"
   description: {}
   resources:
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to delete the user by userKey"
 - key: "USER.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the users"
 - key: "USER.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the user by userKey"
+- key: "USER.GET_LIST.ITEM.PUBLIC"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get public user info for userKey"
 - key: "USER.GET_USER_BY_LOGIN"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all users by login"
 - key: "USER.LOGIN.UPDATE"
   description: {}
   resources:
   - "newUser"
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to updates an existing User logins"
 - key: "USER.METRIC.ONLINE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get all online users"
 - key: "USER.TFA.AVAILABLE_OTP_CHANNEL_SPECS"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get tfaOtpChannelSpecs for user with userKey"
 - key: "USER.TFA.DISABLE"
   description: {}
   resources:
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to disable TFA for user with userKey"
 - key: "USER.TFA.ENABLE"
   description: {}
   resources:
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to enable TFA for user with userKey"
+- key: "USER.UNBLOCK"
+  description: {}
+  resources: []
+  customDescription: "Privilege to unblocks user"
 - key: "USER.UPDATE"
   description: {}
   resources:
   - "newUser"
-  - "id"
   - "user"
-  customDescription: null
+  - "userKey"
+  customDescription: "Privilege to updates an existing user"
