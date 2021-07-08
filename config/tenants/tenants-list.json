@@ -17,6 +17,9 @@
   "timeline" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  }, {
+    "name" : "onboard",
+    "state" : "ACTIVE"
   } ],
   "dashboard" : [ {
     "name" : "xm",
