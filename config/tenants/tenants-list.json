@@ -50,6 +50,9 @@
     "state" : "ACTIVE"
   } ],
   "balance" : [ {
+    "name" : "onboardtest",
+    "state" : "ACTIVE"
+  }, {
     "name" : "xm",
     "state" : "ACTIVE"
   }, {
