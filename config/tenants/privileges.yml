@@ -427,447 +427,488 @@ entity:
   description: {}
   resources:
   - "attachment"
-  customDescription: null
+  customDescription: "Privilege to create a new attachment"
 - key: "ATTACHMENT.DELETE"
   description: {}
   resources:
   - "attachment"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete attachment by id"
 - key: "ATTACHMENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the attachments"
 - key: "ATTACHMENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get attachment by id"
 - key: "ATTACHMENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the attachment corresponding to the\
+    \ query"
 - key: "ATTACHMENT.UPDATE"
   description: {}
   resources:
   - "attachment"
   - "newAttachment"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to update an existing attachment"
 - key: "CALENDAR.CREATE"
   description: {}
   resources:
   - "calendar"
-  customDescription: null
+  customDescription: "Privilege to create a new calendar"
 - key: "CALENDAR.DELETE"
   description: {}
   resources:
   - "calendar"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the calendar by id"
 - key: "CALENDAR.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the calendars"
 - key: "CALENDAR.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the calendar by id"
+- key: "CALENDAR.GET_LIST.ITEM.EVENTS"
+  description: {}
+  resources:
+  - "calendar"
+  - "calendarId"
+  customDescription: "Privilege to get events for specific calendar"
 - key: "CALENDAR.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the calendar corresponding to the query"
 - key: "CALENDAR.UPDATE"
   description: {}
   resources:
   - "calendar"
   - "newCalendar"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing calendar"
 - key: "COMMENT.CREATE"
   description: {}
   resources:
   - "comment"
-  customDescription: null
+  customDescription: "Privilege to create a new comment"
 - key: "COMMENT.DELETE"
   description: {}
   resources:
   - "comment"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the comment by id"
 - key: "COMMENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the comments"
+- key: "COMMENT.GET_LIST.BY_XM_ENTITY"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to search for the comment by xmEntity id"
 - key: "COMMENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the comment by id"
 - key: "COMMENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the comment corresponding to the query"
 - key: "COMMENT.UPDATE"
   description: {}
   resources:
   - "newComment"
   - "comment"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing comment"
 - key: "CONTENT.CREATE"
   description: {}
   resources:
   - "content"
-  customDescription: null
+  customDescription: "Privilege to create a new content"
 - key: "CONTENT.DELETE"
   description: {}
   resources:
   - "id"
   - "content"
-  customDescription: null
+  customDescription: "Privilege to delete the content by id"
 - key: "CONTENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the contents"
 - key: "CONTENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
-- key: "CONTENT.SEARCH"
-  description: {}
-  resources:
-  - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the content by id"
 - key: "CONTENT.UPDATE"
   description: {}
   resources:
   - "newContent"
   - "id"
   - "content"
-  customDescription: null
+  customDescription: "Privilege to updates an existing content"
+- key: "ELASTICSEARCH.INDEX"
+  description: {}
+  resources: []
+  customDescription: "Privilege to reindex all Elasticsearch documents"
 - key: "ENTITY.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the profile by userKey"
 - key: "ENTITY.PROFILE.SELF.GET"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get current user profile"
 - key: "ENTITY.PROFILE.SELF.UPDATE"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to update the profile of current user"
 - key: "ENTITY.PROFILE_INFO.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get entity Spring active profiles"
 - key: "ENTITY.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to create new tenant on entity micro-service"
 - key: "ENTITY.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete tenant on entity micro-service"
 - key: "ENTITY.TENANT.GET_LIST"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to get all tenants on entity micro-service"
 - key: "ENTITY.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get one tenant on entity micro-service"
 - key: "ENTITY.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
-  customDescription: null
+  customDescription: "Privilege to update tenant on entity micro-service"
 - key: "EVENT.CREATE"
   description: {}
   resources:
   - "event"
-  customDescription: null
+  customDescription: "Privilege to create a new event"
 - key: "EVENT.DELETE"
   description: {}
   resources:
   - "id"
   - "event"
-  customDescription: null
+  customDescription: "Privilege to delete the event by id"
 - key: "EVENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the events"
 - key: "EVENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the event by id"
 - key: "EVENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the event corresponding to the query"
 - key: "EVENT.UPDATE"
   description: {}
   resources:
   - "newEvent"
   - "id"
   - "event"
-  customDescription: null
+  customDescription: "Privilege to updates an existing event"
 - key: "FUNCTION.CALL"
   description: {}
-  resources: []
-  customDescription: null
+  resources:
+  - "functionKey"
+  customDescription: "Privilege to execute a function by key (key in entity specification)"
+- key: "FUNCTION.GET.CALL"
+  description: {}
+  resources:
+  - "functionKey"
+  customDescription: "Privilege to call get function"
 - key: "FUNCTION.MVC.CALL"
   description: {}
-  resources: []
-  customDescription: null
+  resources:
+  - "functionKey"
+  customDescription: "Privilege to execute a mvc function by key (key in entity specification)"
+- key: "FUNCTION.PUT.CALL"
+  description: {}
+  resources:
+  - "functionKey"
+  customDescription: "Privilege to call put function"
+- key: "FUNCTION.UPLOAD.CALL"
+  description: {}
+  resources:
+  - "functionKey"
+  customDescription: "Privilege to call upload function"
 - key: "FUNCTION_CONTEXT.CREATE"
   description: {}
   resources:
   - "functionContext"
-  customDescription: null
+  customDescription: "Privilege to create a new functionContext"
 - key: "FUNCTION_CONTEXT.DELETE"
   description: {}
   resources:
   - "functionContext"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the functionContext by id"
 - key: "FUNCTION_CONTEXT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the functionContexts"
 - key: "FUNCTION_CONTEXT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the functionContext by id"
 - key: "FUNCTION_CONTEXT.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the functionContext corresponding to\
+    \ the query"
 - key: "FUNCTION_CONTEXT.UPDATE"
   description: {}
   resources:
   - "functionContext"
   - "id"
   - "newFunctionContext"
-  customDescription: null
+  customDescription: "Privilege to updates an existing functionContext"
 - key: "LINK.CREATE"
   description: {}
   resources:
   - "link"
-  customDescription: null
+  customDescription: "Privilege to create a new link"
 - key: "LINK.DELETE"
   description: {}
   resources:
   - "link"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the link by id"
 - key: "LINK.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the links"
 - key: "LINK.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the link by id"
 - key: "LINK.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the link corresponding to the query"
+- key: "LINK.SOURCE.GET_LIST"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get all the source links by target entity id and\
+    \ typeKeys"
 - key: "LINK.UPDATE"
   description: {}
   resources:
   - "link"
   - "id"
   - "newLink"
-  customDescription: null
+  customDescription: "Privilege to updates an existing link"
 - key: "LOCATION.CREATE"
   description: {}
   resources:
   - "location"
-  customDescription: null
+  customDescription: "Privilege to create a new location"
 - key: "LOCATION.DELETE"
   description: {}
   resources:
   - "location"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the location by id"
 - key: "LOCATION.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the locations"
 - key: "LOCATION.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the location by id"
 - key: "LOCATION.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the location corresponding to the query"
 - key: "LOCATION.UPDATE"
   description: {}
   resources:
   - "location"
   - "id"
   - "newLocation"
-  customDescription: null
+  customDescription: "Privilege to updates an existing location"
 - key: "RATING.CREATE"
   description: {}
   resources:
   - "rating"
-  customDescription: null
+  customDescription: "Privilege to create a new rating"
 - key: "RATING.DELETE"
   description: {}
   resources:
   - "rating"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the rating by id"
 - key: "RATING.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the ratings"
 - key: "RATING.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the rating by id"
 - key: "RATING.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the rating corresponding to the query"
 - key: "RATING.UPDATE"
   description: {}
   resources:
   - "newRating"
   - "rating"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing rating"
 - key: "STORAGE.OBJECT.CREATE"
   description: {}
   resources:
   - "multipartFile"
   - "size"
-  customDescription: null
+  customDescription: "Privilege to create object on S3 or other supported storage"
 - key: "TAG.CREATE"
   description: {}
   resources:
   - "tag"
-  customDescription: null
+  customDescription: "Privilege to create a new tag"
 - key: "TAG.DELETE"
   description: {}
   resources:
   - "id"
   - "tag"
-  customDescription: null
+  customDescription: "Privilege to delete the tag by id"
 - key: "TAG.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the tags"
 - key: "TAG.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the tag by id"
 - key: "TAG.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the tags corresponding to the query"
 - key: "TAG.UPDATE"
   description: {}
   resources:
   - "newTag"
   - "id"
   - "tag"
-  customDescription: null
+  customDescription: "Privilege to updates an existing tag"
 - key: "VOTE.CREATE"
   description: {}
   resources:
   - "vote"
-  customDescription: null
+  customDescription: "Privilege to create a new vote"
 - key: "VOTE.DELETE"
   description: {}
   resources:
   - "id"
   - "vote"
-  customDescription: null
+  customDescription: "Privilege to delete the vote by id"
 - key: "VOTE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the votes"
 - key: "VOTE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get vote by id"
 - key: "VOTE.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the votes corresponding to the query"
 - key: "VOTE.UPDATE"
   description: {}
   resources:
   - "newVote"
   - "id"
   - "vote"
-  customDescription: null
+  customDescription: "Privilege to updates an existing vote"
 - key: "XMENTITY.AVATAR.UPDATE"
   description: {}
   resources:
   - "idOrKey"
   - "multipartFile"
-  customDescription: null
+  customDescription: "Privilege to update avatar"
 - key: "XMENTITY.CREATE"
   description: {}
   resources:
   - "xmEntity"
-  customDescription: null
+  customDescription: "Privilege to create a tenant"
 - key: "XMENTITY.DELETE"
   description: {}
   resources:
   - "id"
   - "xmEntity"
-  customDescription: null
+  customDescription: "Privilege to delete the xmEntity by id"
+- key: "XMENTITY.EXPORT"
+  description: {}
+  resources:
+  - "exportDto"
+  customDescription: "Privilege to export xmEntities by export specification"
 - key: "XMENTITY.EXPORT.FILE"
   description: {}
   resources:
   - "typeKey"
   - "fileFormat"
-  customDescription: null
+  customDescription: "Privilege to export all xmEntities by typeKey in specific file\
+    \ format"
 - key: "XMENTITY.FUNCTION.EXECUTE"
   description: {}
   resources:
@@ -875,48 +916,55 @@ entity:
   - "xmEntity.function"
   - "context"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to execute post function on xmEntity"
 - key: "XMENTITY.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the xmEntities"
 - key: "XMENTITY.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the xmEntity by id or key"
 - key: "XMENTITY.GET_PROFILE"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get xmEntity of current user profile"
+- key: "XMENTITY.IMPORT"
+  description: {}
+  resources:
+  - "importDto"
+  customDescription: "Privilege to import xmEntities by import specification"
 - key: "XMENTITY.LINK.SOURCE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
-  customDescription: null
+  customDescription: "Privilege to get all source links with entities referenced by\
+    \ indicated entity"
 - key: "XMENTITY.LINK.TARGET.CREATE"
   description: {}
   resources:
   - "idOrKey"
   - "file"
   - "link"
-  customDescription: null
+  customDescription: "Privilege to add target link to indicated xmEntity"
 - key: "XMENTITY.LINK.TARGET.DELETE"
   description: {}
   resources:
   - "idOrKey"
   - "xmEntity.link.target"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete target link from"
 - key: "XMENTITY.LINK.TARGET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
-  customDescription: null
+  customDescription: "Privilege to get all target links with entities referenced by\
+    \ indicated entity"
 - key: "XMENTITY.LINK.TARGET.UPDATE"
   description: {}
   resources:
@@ -925,18 +973,47 @@ entity:
   - "link"
   - "xmEntity.link.target"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to update an existing target link in the entity"
 - key: "XMENTITY.SEARCH"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to search for the xmEntity corresponding to the query"
+- key: "XMENTITY.SEARCH.QUERY"
+  description: {}
+  resources:
+  - "query"
+  customDescription: "Privilege to search for the xmEntity corresponding to the query"
+- key: "XMENTITY.SEARCH.TEMPLATE"
+  description: {}
+  resources:
+  - "template"
+  customDescription: "Privilege to search for the xmEntity by query template"
+- key: "XMENTITY.SEARCH.TO_LINK.QUERY"
+  description: {}
+  resources:
+  - "query"
+  customDescription: "Privilege to search candidates for link with specified XmEntity"
+- key: "XMENTITY.SEARCH.TYPEKEY.QUERY"
+  description: {}
+  resources:
+  - "typeKey"
+  - "query"
+  customDescription: "Privilege to search for the xmEntity corresponding to the query(not\
+    \ required) and typeKey"
+- key: "XMENTITY.SEARCH.TYPEKEY.TEMPLATE"
+  description: {}
+  resources:
+  - "template"
+  - "typeKey"
+  customDescription: "Privilege to search for the xmEntity corresponding to the template(not\
+    \ required) and typeKey"
 - key: "XMENTITY.SELF.AVATAR.UPDATE"
   description: {}
   resources:
   - "request"
   - "fileName"
-  customDescription: null
+  customDescription: "Privilege to update avatar of current user"
 - key: "XMENTITY.STATE"
   description: {}
   resources:
@@ -944,42 +1021,49 @@ entity:
   - "id"
   - "stateKey"
   - "xmEntity"
-  customDescription: null
+  customDescription: "Privilege to update xmEntity state"
 - key: "XMENTITY.STATE.UPDATE"
   description: {}
   resources:
   - "xmEntity.state"
   - "id"
   - "xmEntity"
-  customDescription: null
+  customDescription: "Privilege to update xmEntity state"
 - key: "XMENTITY.UPDATE"
   description: {}
   resources:
   - "newXmEntity"
   - "id"
   - "xmEntity"
-  customDescription: null
+  customDescription: "Privilege to updates an existing xmEntity"
 - key: "XMENTITY_SPEC.GENERATE"
   description: {}
   resources:
   - "rootTypeKey"
-  customDescription: null
+  customDescription: "Privilege to generate a new random xmEntity with passed type.\
+    \ Used for demo"
 - key: "XMENTITY_SPEC.GET"
   description: {}
   resources:
   - "returnObject"
   - "log"
-  customDescription: null
+  customDescription: "Privilege to get the xmEntity specification by filter"
 - key: "XMENTITY_SPEC.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the xmEntity specification by key"
+- key: "XMENTITY_SPEC.SCHEMA.GET"
+  description: {}
+  resources:
+  - "returnObject"
+  - "log"
+  customDescription: "Privilege to get the xmEntity specification json schema"
 - key: "XMENTITY_SPEC.UPDATE"
   description: {}
   resources:
   - "xmEntitySpec"
-  customDescription: null
+  customDescription: "Privilege to update an existing xmEntity specification"
 gate:
 - key: "GATE.MONITORING.SERVICE.GET_HEALTH"
   description: {}
