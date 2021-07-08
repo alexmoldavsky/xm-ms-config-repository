@@ -4,647 +4,830 @@ balance:
   description: {}
   resources:
   - "balance"
+  customDescription: null
 - key: "BALANCE.DELETE"
   description: {}
   resources:
   - "balance"
   - "id"
+  customDescription: null
 - key: "BALANCE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "BALANCE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "BALANCE.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "BALANCE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "BALANCE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "BALANCE.TENANT.GET_LIST"
   description: {}
   resources: []
+  customDescription: null
 - key: "BALANCE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "BALANCE.TENANT.UPDATE"
   description: {}
   resources:
   - "state"
   - "tenant"
+  customDescription: null
 - key: "BALANCE.UPDATE"
   description: {}
   resources:
   - "balance"
   - "newBalance"
   - "id"
+  customDescription: null
 - key: "METRIC.CREATE"
   description: {}
   resources:
   - "metric"
+  customDescription: null
 - key: "METRIC.DELETE"
   description: {}
   resources:
   - "metric"
   - "id"
+  customDescription: null
 - key: "METRIC.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "METRIC.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "METRIC.UPDATE"
   description: {}
   resources:
   - "metric"
   - "id"
   - "newMetric"
+  customDescription: null
 - key: "POCKET.CREATE"
   description: {}
   resources:
   - "pocket"
+  customDescription: null
 - key: "POCKET.DELETE"
   description: {}
   resources:
   - "id"
   - "pocket"
+  customDescription: null
 - key: "POCKET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "POCKET.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "POCKET.UPDATE"
   description: {}
   resources:
   - "newPocket"
   - "id"
   - "pocket"
+  customDescription: null
 config:
 - key: "CONFIG.ADMIN.CREATE"
   description: {}
   resources:
   - "request"
   - "content"
+  customDescription: "Privilege to create configuration for admin"
 - key: "CONFIG.ADMIN.CREATE.LIST"
   description: {}
   resources:
   - "files"
   - "tenant"
+  customDescription: "Privilege to create list of configurations for admin"
 - key: "CONFIG.ADMIN.DELETE"
   description: {}
   resources:
   - "request"
+  customDescription: "Privilege to delete configuration for admin"
+- key: "CONFIG.ADMIN.DELETE.LIST"
+  description: {}
+  resources:
+  - "request"
+  customDescription: "Privilege to delete list of configurations for admin"
+- key: "CONFIG.ADMIN.DELETE_IN_MEMORY"
+  description: {}
+  resources:
+  - "request"
+  - "content"
+  customDescription: "Privilege to delete configuration in memory for admin"
 - key: "CONFIG.ADMIN.GET_LIST.ITEM"
   description: {}
   resources:
+  - "request"
   - "returnObject"
+  customDescription: "Privilege to get configuration for admin"
+- key: "CONFIG.ADMIN.GET_VERSION"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get version for admin"
 - key: "CONFIG.ADMIN.REFRESH"
   description: {}
   resources:
   - "request"
+  customDescription: "Privilege to refresh configuration for admin"
 - key: "CONFIG.ADMIN.UPDATE"
   description: {}
   resources:
   - "request"
   - "content"
+  customDescription: "Privilege to update configuration for admin"
+- key: "CONFIG.ADMIN.UPDATE_IN_MEMORY"
+  description: {}
+  resources:
+  - "request"
+  - "content"
+  customDescription: "Privilege to update configuration in memory for admin"
+- key: "CONFIG.ADMIN.UPDATE_IN_MEMORY.LIST"
+  description: {}
+  resources:
+  - "files"
+  - "tenant"
+  customDescription: "Privilege to update list of configurations in memory for admin"
 - key: "CONFIG.CLIENT.CREATE"
   description: {}
   resources:
   - "request"
   - "content"
+  customDescription: "Privilege to create config for client"
 - key: "CONFIG.CLIENT.DELETE"
   description: {}
   resources:
   - "request"
+  customDescription: "Privilege to delete config for client"
 - key: "CONFIG.CLIENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: "Privilege to get config for client"
+- key: "CONFIG.CLIENT.REFRESH"
+  description: {}
+  resources:
+  - "request"
+  customDescription: "Privilege to refresh config for client"
 - key: "CONFIG.CLIENT.UPDATE"
   description: {}
   resources:
   - "request"
   - "content"
+  customDescription: "Privilege to update config for client"
+- key: "CONFIG.CLIENT.WEBAPP.GET_LIST.ITEM"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get private ui settings"
 - key: "CONFIG.PROFILE_INFO.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: "Privilege to get config Spring active profiles"
 - key: "CONFIG.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: "Privilege to add a new config tenant"
 - key: "CONFIG.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
   - "serviceName"
+  customDescription: "Privilege to delete config tenant"
 - key: "CONFIG.TENANT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: "Privilege to get all config tenants"
 - key: "CONFIG.TENANT.UPDATE"
   description: {}
   resources:
   - "tenantKey"
   - "serviceName"
   - "tenantState"
+  customDescription: "Privilege to update config tenant"
 dashboard:
 - key: "DASHBOARD.CREATE"
   description: {}
   resources:
   - "dashboard"
+  customDescription: null
 - key: "DASHBOARD.DELETE"
   description: {}
   resources:
   - "id"
   - "dashboard"
+  customDescription: null
 - key: "DASHBOARD.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DASHBOARD.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DASHBOARD.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "DASHBOARD.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "DASHBOARD.TENANT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DASHBOARD.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DASHBOARD.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
+  customDescription: null
 - key: "DASHBOARD.UPDATE"
   description: {}
   resources:
   - "newDashboard"
   - "id"
   - "dashboard"
+  customDescription: null
 - key: "DEFAULT_PROFILE.CREATE"
   description: {}
   resources:
   - "defaultProfile"
+  customDescription: null
 - key: "DEFAULT_PROFILE.DELETE"
   description: {}
   resources:
   - "defaultProfile"
   - "id"
+  customDescription: null
 - key: "DEFAULT_PROFILE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DEFAULT_PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "DEFAULT_PROFILE.UPDATE"
   description: {}
   resources:
   - "defaultProfile"
   - "newDefaultProfile"
   - "id"
+  customDescription: null
 - key: "PROFILE.CREATE"
   description: {}
   resources:
   - "profile"
+  customDescription: null
 - key: "PROFILE.DELETE"
   description: {}
   resources:
   - "profile"
   - "id"
+  customDescription: null
 - key: "PROFILE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "PROFILE.UPDATE"
   description: {}
   resources:
   - "profile"
   - "newProfile"
   - "id"
+  customDescription: null
 - key: "PROFILE_INFO.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "WIDGET.CREATE"
   description: {}
   resources:
   - "widget"
+  customDescription: null
 - key: "WIDGET.DELETE"
   description: {}
   resources:
   - "widget"
   - "id"
+  customDescription: null
 - key: "WIDGET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "WIDGET.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "WIDGET.UPDATE"
   description: {}
   resources:
   - "widget"
   - "newWidget"
   - "id"
+  customDescription: null
 entity:
 - key: "ATTACHMENT.CREATE"
   description: {}
   resources:
   - "attachment"
+  customDescription: null
 - key: "ATTACHMENT.DELETE"
   description: {}
   resources:
   - "attachment"
   - "id"
+  customDescription: null
 - key: "ATTACHMENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ATTACHMENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ATTACHMENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ATTACHMENT.UPDATE"
   description: {}
   resources:
   - "attachment"
   - "newAttachment"
   - "id"
+  customDescription: null
 - key: "CALENDAR.CREATE"
   description: {}
   resources:
   - "calendar"
+  customDescription: null
 - key: "CALENDAR.DELETE"
   description: {}
   resources:
   - "calendar"
   - "id"
+  customDescription: null
 - key: "CALENDAR.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CALENDAR.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CALENDAR.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CALENDAR.UPDATE"
   description: {}
   resources:
   - "calendar"
   - "newCalendar"
   - "id"
+  customDescription: null
 - key: "COMMENT.CREATE"
   description: {}
   resources:
   - "comment"
+  customDescription: null
 - key: "COMMENT.DELETE"
   description: {}
   resources:
   - "comment"
   - "id"
+  customDescription: null
 - key: "COMMENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "COMMENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "COMMENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "COMMENT.UPDATE"
   description: {}
   resources:
   - "newComment"
   - "comment"
   - "id"
+  customDescription: null
 - key: "CONTENT.CREATE"
   description: {}
   resources:
   - "content"
+  customDescription: null
 - key: "CONTENT.DELETE"
   description: {}
   resources:
   - "id"
   - "content"
+  customDescription: null
 - key: "CONTENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CONTENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CONTENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CONTENT.UPDATE"
   description: {}
   resources:
   - "newContent"
   - "id"
   - "content"
+  customDescription: null
 - key: "ENTITY.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ENTITY.PROFILE.SELF.GET"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ENTITY.PROFILE.SELF.UPDATE"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ENTITY.PROFILE_INFO.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ENTITY.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "ENTITY.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "ENTITY.TENANT.GET_LIST"
   description: {}
   resources: []
+  customDescription: null
 - key: "ENTITY.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ENTITY.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
+  customDescription: null
 - key: "EVENT.CREATE"
   description: {}
   resources:
   - "event"
+  customDescription: null
 - key: "EVENT.DELETE"
   description: {}
   resources:
   - "id"
   - "event"
+  customDescription: null
 - key: "EVENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "EVENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "EVENT.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "EVENT.UPDATE"
   description: {}
   resources:
   - "newEvent"
   - "id"
   - "event"
+  customDescription: null
 - key: "FUNCTION.CALL"
   description: {}
   resources: []
+  customDescription: null
 - key: "FUNCTION.MVC.CALL"
   description: {}
   resources: []
+  customDescription: null
 - key: "FUNCTION_CONTEXT.CREATE"
   description: {}
   resources:
   - "functionContext"
+  customDescription: null
 - key: "FUNCTION_CONTEXT.DELETE"
   description: {}
   resources:
   - "functionContext"
   - "id"
+  customDescription: null
 - key: "FUNCTION_CONTEXT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "FUNCTION_CONTEXT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "FUNCTION_CONTEXT.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "FUNCTION_CONTEXT.UPDATE"
   description: {}
   resources:
   - "functionContext"
   - "id"
   - "newFunctionContext"
+  customDescription: null
 - key: "LINK.CREATE"
   description: {}
   resources:
   - "link"
+  customDescription: null
 - key: "LINK.DELETE"
   description: {}
   resources:
   - "link"
   - "id"
+  customDescription: null
 - key: "LINK.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LINK.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LINK.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LINK.UPDATE"
   description: {}
   resources:
   - "link"
   - "id"
   - "newLink"
+  customDescription: null
 - key: "LOCATION.CREATE"
   description: {}
   resources:
   - "location"
+  customDescription: null
 - key: "LOCATION.DELETE"
   description: {}
   resources:
   - "location"
   - "id"
+  customDescription: null
 - key: "LOCATION.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LOCATION.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LOCATION.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "LOCATION.UPDATE"
   description: {}
   resources:
   - "location"
   - "id"
   - "newLocation"
+  customDescription: null
 - key: "RATING.CREATE"
   description: {}
   resources:
   - "rating"
+  customDescription: null
 - key: "RATING.DELETE"
   description: {}
   resources:
   - "rating"
   - "id"
+  customDescription: null
 - key: "RATING.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "RATING.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "RATING.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "RATING.UPDATE"
   description: {}
   resources:
   - "newRating"
   - "rating"
   - "id"
+  customDescription: null
 - key: "STORAGE.OBJECT.CREATE"
   description: {}
   resources:
   - "multipartFile"
   - "size"
+  customDescription: null
 - key: "TAG.CREATE"
   description: {}
   resources:
   - "tag"
+  customDescription: null
 - key: "TAG.DELETE"
   description: {}
   resources:
   - "id"
   - "tag"
+  customDescription: null
 - key: "TAG.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TAG.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TAG.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TAG.UPDATE"
   description: {}
   resources:
   - "newTag"
   - "id"
   - "tag"
+  customDescription: null
 - key: "VOTE.CREATE"
   description: {}
   resources:
   - "vote"
+  customDescription: null
 - key: "VOTE.DELETE"
   description: {}
   resources:
   - "id"
   - "vote"
+  customDescription: null
 - key: "VOTE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "VOTE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "VOTE.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "VOTE.UPDATE"
   description: {}
   resources:
   - "newVote"
   - "id"
   - "vote"
+  customDescription: null
 - key: "XMENTITY.AVATAR.UPDATE"
   description: {}
   resources:
   - "idOrKey"
   - "multipartFile"
+  customDescription: null
 - key: "XMENTITY.CREATE"
   description: {}
   resources:
   - "xmEntity"
+  customDescription: null
 - key: "XMENTITY.DELETE"
   description: {}
   resources:
   - "id"
   - "xmEntity"
+  customDescription: null
 - key: "XMENTITY.EXPORT.FILE"
   description: {}
   resources:
   - "typeKey"
   - "fileFormat"
+  customDescription: null
 - key: "XMENTITY.FUNCTION.EXECUTE"
   description: {}
   resources:
@@ -652,40 +835,48 @@ entity:
   - "xmEntity.function"
   - "context"
   - "id"
+  customDescription: null
 - key: "XMENTITY.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "XMENTITY.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "XMENTITY.GET_PROFILE"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "XMENTITY.LINK.SOURCE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: null
 - key: "XMENTITY.LINK.TARGET.CREATE"
   description: {}
   resources:
   - "idOrKey"
   - "file"
   - "link"
+  customDescription: null
 - key: "XMENTITY.LINK.TARGET.DELETE"
   description: {}
   resources:
   - "idOrKey"
   - "xmEntity.link.target"
   - "id"
+  customDescription: null
 - key: "XMENTITY.LINK.TARGET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: null
 - key: "XMENTITY.LINK.TARGET.UPDATE"
   description: {}
   resources:
@@ -694,15 +885,18 @@ entity:
   - "link"
   - "xmEntity.link.target"
   - "id"
+  customDescription: null
 - key: "XMENTITY.SEARCH"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "XMENTITY.SELF.AVATAR.UPDATE"
   description: {}
   resources:
   - "request"
   - "fileName"
+  customDescription: null
 - key: "XMENTITY.STATE"
   description: {}
   resources:
@@ -710,65 +904,79 @@ entity:
   - "id"
   - "stateKey"
   - "xmEntity"
+  customDescription: null
 - key: "XMENTITY.STATE.UPDATE"
   description: {}
   resources:
   - "xmEntity.state"
   - "id"
   - "xmEntity"
+  customDescription: null
 - key: "XMENTITY.UPDATE"
   description: {}
   resources:
   - "newXmEntity"
   - "id"
   - "xmEntity"
+  customDescription: null
 - key: "XMENTITY_SPEC.GENERATE"
   description: {}
   resources:
   - "rootTypeKey"
+  customDescription: null
 - key: "XMENTITY_SPEC.GET"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: null
 - key: "XMENTITY_SPEC.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "XMENTITY_SPEC.UPDATE"
   description: {}
   resources:
   - "xmEntitySpec"
+  customDescription: null
 gate:
 - key: "GATE.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "GATE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "GATE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "GATE.TENANT.GET_LIST"
   description: {}
   resources: []
+  customDescription: null
 - key: "GATE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "GATE.TENANT.UPDATE"
   description: {}
   resources:
   - "state"
   - "tenant"
+  customDescription: null
 - key: "ROUTE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: null
 timeline:
 - key: "TIMELINE.GET_LIST"
   description: {}
@@ -778,254 +986,317 @@ timeline:
   - "dateFrom"
   - "operation"
   - "userKey"
+  customDescription: null
 - key: "TIMELINE.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TIMELINE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "TIMELINE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "TIMELINE.TENANT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TIMELINE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TIMELINE.TENANT.PROPERTIES.UPDATE"
   description: {}
   resources:
   - "timelineYml"
+  customDescription: null
 - key: "TIMELINE.TENANT.PROPERTIES.VALIDATE"
   description: {}
   resources: []
+  customDescription: null
 - key: "TIMELINE.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
+  customDescription: null
 uaa:
 - key: "ACCOUNT.ACTIVATE"
   description: {}
   resources: []
+  customDescription: null
 - key: "ACCOUNT.CHECK_AUTH"
   description: {}
   resources:
   - "request"
+  customDescription: null
 - key: "ACCOUNT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ACCOUNT.LOGIN.UPDATE"
   description: {}
   resources:
   - "newUser"
   - "id"
   - "user"
+  customDescription: null
 - key: "ACCOUNT.PASSWORD.RESET"
   description: {}
   resources:
   - "mail"
+  customDescription: null
 - key: "ACCOUNT.PASSWORD.RESET.CHECK"
   description: {}
   resources: []
+  customDescription: null
 - key: "ACCOUNT.PASSWORD.RESET.FINISH"
   description: {}
   resources:
   - "keyAndPassword"
+  customDescription: null
 - key: "ACCOUNT.PASSWORD.UPDATE"
   description: {}
   resources:
   - "password"
+  customDescription: null
 - key: "ACCOUNT.REGISTER"
   description: {}
   resources:
   - "request"
   - "user"
+  customDescription: null
 - key: "ACCOUNT.RESET_ACTIVATION"
   description: {}
   resources:
   - "login"
+  customDescription: null
 - key: "ACCOUNT.TFA.AVAILABLE_OTP_CHANNEL_SPECS"
   description: {}
   resources: []
+  customDescription: null
 - key: "ACCOUNT.TFA.DISABLE"
   description: {}
   resources: []
+  customDescription: null
 - key: "ACCOUNT.TFA.ENABLE"
   description: {}
   resources: []
+  customDescription: null
 - key: "ACCOUNT.UPDATE"
   description: {}
   resources:
   - "user"
+  customDescription: null
 - key: "AUDIT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "AUDIT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CAPTCHA.GET"
   description: {}
   resources:
   - "request"
+  customDescription: null
 - key: "CLIENT.CREATE"
   description: {}
   resources:
   - "client"
+  customDescription: null
 - key: "CLIENT.DELETE"
   description: {}
   resources:
   - "client"
   - "id"
+  customDescription: null
 - key: "CLIENT.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CLIENT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "CLIENT.UPDATE"
   description: {}
   resources:
   - "newClient"
   - "client"
   - "id"
+  customDescription: null
 - key: "ROLE.CREATE"
   description: {}
   resources:
   - "role"
+  customDescription: null
 - key: "ROLE.DELETE"
   description: {}
   resources:
   - "roleKey"
+  customDescription: null
 - key: "ROLE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
   - "log"
+  customDescription: null
 - key: "ROLE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ROLE.MATRIX.GET"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "ROLE.MATRIX.UPDATE"
   description: {}
   resources:
   - "roleMatrix"
+  customDescription: null
 - key: "ROLE.UPDATE"
   description: {}
   resources:
   - "role"
+  customDescription: null
 - key: "SOCIAL.PROVIDERS.GET_LIST"
   description: {}
   resources: []
+  customDescription: null
 - key: "SOCIAL.SIGN_IN"
   description: {}
   resources: []
+  customDescription: null
 - key: "SOCIAL.SIGN_UP"
   description: {}
   resources: []
+  customDescription: null
 - key: "TENANT.LOGIN.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "TENANT.LOGIN.UPDATE"
   description: {}
   resources:
   - "loginsYml"
+  customDescription: null
 - key: "TENANT.LOGIN.VALIDATE"
   description: {}
   resources: []
+  customDescription: null
 - key: "UAA.PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "UAA.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
+  customDescription: null
 - key: "UAA.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
+  customDescription: null
 - key: "UAA.TENANT.GET_LIST"
   description: {}
   resources: []
+  customDescription: null
 - key: "UAA.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "UAA.TENANT.PROPERTIES.UPDATE"
   description: {}
   resources:
   - "uaaYml"
+  customDescription: null
 - key: "UAA.TENANT.PROPERTIES.VALIDATE"
   description: {}
   resources: []
+  customDescription: null
 - key: "UAA.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
+  customDescription: null
 - key: "USER.CREATE"
   description: {}
   resources:
   - "user"
+  customDescription: null
 - key: "USER.DELETE"
   description: {}
   resources:
   - "id"
   - "user"
+  customDescription: null
 - key: "USER.GET_LIST"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "USER.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "USER.GET_USER_BY_LOGIN"
   description: {}
   resources:
   - "returnObject"
+  customDescription: null
 - key: "USER.LOGIN.UPDATE"
   description: {}
   resources:
   - "newUser"
   - "id"
   - "user"
+  customDescription: null
 - key: "USER.METRIC.ONLINE"
   description: {}
   resources: []
+  customDescription: null
 - key: "USER.TFA.AVAILABLE_OTP_CHANNEL_SPECS"
   description: {}
   resources: []
+  customDescription: null
 - key: "USER.TFA.DISABLE"
   description: {}
   resources:
   - "id"
   - "user"
+  customDescription: null
 - key: "USER.TFA.ENABLE"
   description: {}
   resources:
   - "id"
   - "user"
+  customDescription: null
 - key: "USER.UPDATE"
   description: {}
   resources:
   - "newUser"
   - "id"
   - "user"
+  customDescription: null
