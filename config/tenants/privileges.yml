@@ -283,145 +283,169 @@ dashboard:
   description: {}
   resources:
   - "dashboard"
-  customDescription: null
+  customDescription: "Privilege to create a new dashboard"
+- key: "DASHBOARD.CREATE.BULK"
+  description: {}
+  resources:
+  - "dashboard"
+  customDescription: "Privilege to create dashboard bulk"
 - key: "DASHBOARD.DELETE"
   description: {}
   resources:
   - "id"
   - "dashboard"
-  customDescription: null
+  customDescription: "Privilege to delete the dashboard by id"
+- key: "DASHBOARD.DELETE.BULK"
+  description: {}
+  resources:
+  - "dashboard"
+  customDescription: "Privilege to delete dashboard bulk"
 - key: "DASHBOARD.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the dashboards"
 - key: "DASHBOARD.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the dashboard by id"
+- key: "DASHBOARD.IMPORT"
+  description: {}
+  resources:
+  - "dashboard"
+  customDescription: "Privilege to import dashboards"
 - key: "DASHBOARD.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to add a new dashboard tenant"
 - key: "DASHBOARD.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete dashboard tenant"
 - key: "DASHBOARD.TENANT.GET_LIST"
   description: {}
-  resources:
-  - "returnObject"
-  customDescription: null
+  resources: []
+  customDescription: "Privilege to get all dashboard tenants"
 - key: "DASHBOARD.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get dashboard tenant"
 - key: "DASHBOARD.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
-  customDescription: null
+  customDescription: "Privilege to update dashboard tenant"
 - key: "DASHBOARD.UPDATE"
   description: {}
   resources:
   - "newDashboard"
   - "id"
   - "dashboard"
-  customDescription: null
+  customDescription: "Privilege to updates an existing dashboard"
+- key: "DASHBOARD.UPDATE.BULK"
+  description: {}
+  resources:
+  - "dashboard"
+  customDescription: "Privilege to update dashboard bulk"
 - key: "DEFAULT_PROFILE.CREATE"
   description: {}
   resources:
   - "defaultProfile"
-  customDescription: null
+  customDescription: "Privilege to create a new default dashboard per role configuration.\
+    \ Tenant admin can configure default dashboard"
 - key: "DEFAULT_PROFILE.DELETE"
   description: {}
   resources:
   - "defaultProfile"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the default dashboard per role configuration\
+    \ by id. Tenant admin can configure default dashboard"
 - key: "DEFAULT_PROFILE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the default dashboards per role configuration.\
+    \ Tenant admin can configure default dashboard"
 - key: "DEFAULT_PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the default dashboard per role configuration\
+    \ by id. Tenant admin can configure default dashboard"
 - key: "DEFAULT_PROFILE.UPDATE"
   description: {}
   resources:
   - "defaultProfile"
   - "newDefaultProfile"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing default dashboard per role\
+    \ configuration. Tenant admin can configure default dashboard"
 - key: "PROFILE.CREATE"
   description: {}
   resources:
   - "profile"
-  customDescription: null
+  customDescription: "Privilege to create a new profile"
 - key: "PROFILE.DELETE"
   description: {}
   resources:
   - "profile"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the profile by id"
 - key: "PROFILE.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the profiles"
 - key: "PROFILE.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the profile by id"
 - key: "PROFILE.UPDATE"
   description: {}
   resources:
   - "profile"
   - "newProfile"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing profile"
 - key: "PROFILE_INFO.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get dashboard Spring active profiles"
 - key: "WIDGET.CREATE"
   description: {}
   resources:
   - "widget"
-  customDescription: null
+  customDescription: "Privilege to create a new widget"
 - key: "WIDGET.DELETE"
   description: {}
   resources:
   - "widget"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to delete the widget by id"
 - key: "WIDGET.GET_LIST"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the widgets"
 - key: "WIDGET.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get the widget by id"
 - key: "WIDGET.UPDATE"
   description: {}
   resources:
   - "widget"
   - "newWidget"
   - "id"
-  customDescription: null
+  customDescription: "Privilege to updates an existing widget"
 entity:
 - key: "ATTACHMENT.CREATE"
   description: {}
