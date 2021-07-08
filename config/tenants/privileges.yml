@@ -1142,6 +1142,11 @@ gate:
   - "log"
   customDescription: "Privilege to get the active routes"
 timeline:
+- key: "BALANCE.PROFILE.GET_LIST.ITEM"
+  description: {}
+  resources:
+  - "returnObject"
+  customDescription: "Privilege to get timeline Spring active profiles"
 - key: "TIMELINE.GET_LIST"
   description: {}
   resources:
@@ -1150,47 +1155,41 @@ timeline:
   - "dateFrom"
   - "operation"
   - "userKey"
-  customDescription: null
-- key: "TIMELINE.PROFILE.GET_LIST.ITEM"
-  description: {}
-  resources:
-  - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get all the timelines"
 - key: "TIMELINE.TENANT.CREATE"
   description: {}
   resources:
   - "tenant"
-  customDescription: null
+  customDescription: "Privilege to add a new timeline tenant"
 - key: "TIMELINE.TENANT.DELETE"
   description: {}
   resources:
   - "tenantKey"
-  customDescription: null
+  customDescription: "Privilege to delete timeline tenant"
 - key: "TIMELINE.TENANT.GET_LIST"
   description: {}
-  resources:
-  - "returnObject"
-  customDescription: null
+  resources: []
+  customDescription: "Privilege to get all timeline tenants"
 - key: "TIMELINE.TENANT.GET_LIST.ITEM"
   description: {}
   resources:
   - "returnObject"
-  customDescription: null
+  customDescription: "Privilege to get timeline tenant"
 - key: "TIMELINE.TENANT.PROPERTIES.UPDATE"
   description: {}
   resources:
   - "timelineYml"
-  customDescription: null
+  customDescription: "Privilege to update timeline yml"
 - key: "TIMELINE.TENANT.PROPERTIES.VALIDATE"
   description: {}
   resources: []
-  customDescription: null
+  customDescription: "Privilege to validate timeline yml"
 - key: "TIMELINE.TENANT.UPDATE"
   description: {}
   resources:
   - "tenant"
   - "status"
-  customDescription: null
+  customDescription: "Privilege to update timeline tenant"
 uaa:
 - key: "ACCOUNT.ACTIVATE"
   description: {}
