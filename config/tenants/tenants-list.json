@@ -60,6 +60,9 @@
     "state" : "ACTIVE"
   } ],
   "scheduler" : [ {
+    "name" : "onboardtest",
+    "state" : "ACTIVE"
+  }, {
     "name" : "xm",
     "state" : "ACTIVE"
   } ]
