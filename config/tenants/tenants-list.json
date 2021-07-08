@@ -22,6 +22,9 @@
   "balance" : [ {
     "name" : "xm",
     "state" : "ACTIVE"
+  }, {
+    "name" : "onboard",
+    "state" : "ACTIVE"
   } ],
   "scheduler" : [ {
     "name" : "xm",
