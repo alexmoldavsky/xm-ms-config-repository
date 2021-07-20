@@ -1,0 +1,70 @@
+---
+types:
+  - key: TARIFF
+    name: { en: "Tariff",  ru: "Тариф" }
+    isApp: true
+    isAbstract: false
+    icon: local_atm
+    states:
+      - key: CONNECT
+        name: { en: "Connect", ru: "Подключить" }
+        icon: link
+        color: "#117f0d"
+    functions:
+      - key: CONNECT-TARIFF
+        name: { en: "Connect Tariff", ru: "Подключить тариф" }
+        inputSpec: |
+          {
+            "type": "object",
+            "properties": {
+                  "userName": {
+                      "title": "User name",
+                      "type": "string"
+                  }
+              }
+           }
+        inputForm: |
+          {
+            "form": [
+                      {"key": "userName", "title": "User name", "readonly": false}
+                    ]
+          }
+    dataSpec: |
+      {
+          "type": "object",
+          "properties": {
+              "tariffName": {
+                  "title": "Name",
+                  "type": "string"
+              },
+              "tariffPrice": {
+                  "title": "Price",
+                  "type": "string"
+              },
+              "tariffFeatures": {
+                  "title": "Features",
+                  "type": "string"
+              }
+          },
+          "required": [
+              "tariffName",
+              "tariffPrice"
+          ]
+      }
+    dataForm: |
+      {
+          "form":[
+                   {
+                     "key": "tariffName",
+                     "title": "Name"
+                   },
+                   {
+                     "key": "tariffPrice",
+                     "title": "Price"
+                   },
+                   {
+                     "key": "tariffFeatures",
+                     "title": "Features"
+                   }
+                 ]
+      }
