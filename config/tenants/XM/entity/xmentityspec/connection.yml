@@ -1,3 +1,6 @@
 ---
 types:
   - key: CONNECTION
+    name: { en: "Connection",  ru: "Подключение" }
+    isApp: true
+    isAbstract: false

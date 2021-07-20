@@ -10,25 +10,6 @@ types:
         name: { en: "Connect", ru: "Подключить" }
         icon: link
         color: "#117f0d"
-    functions:
-      - key: CONNECT-TARIFF
-        name: { en: "Connect Tariff", ru: "Подключить тариф" }
-        inputSpec: |
-          {
-            "type": "object",
-            "properties": {
-                  "userName": {
-                      "title": "User name",
-                      "type": "string"
-                  }
-              }
-           }
-        inputForm: |
-          {
-            "form": [
-                      {"key": "userName", "title": "User name", "readonly": false}
-                    ]
-          }
     dataSpec: |
       {
           "type": "object",
