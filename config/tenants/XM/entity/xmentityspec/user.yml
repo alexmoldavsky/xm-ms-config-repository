@@ -4,11 +4,6 @@ types:
     name: { en: "User",  ru: "Пользователь" }
     isApp: true
     isAbstract: false
-    states:
-      - key: NEW
-        name: { en: "New", ru: "Новый" }
-        icon: fiber_new
-        color: '#FFEB3B'
     dataSpec: |
           {
               "type": "object",
@@ -31,6 +26,11 @@ types:
           {
               "form":[
                          "userFirstname",
-                         "userLastName"
+                         "userLastName",
+                         {
+                            "type": "submit",
+                            "style": "btn-info",
+                            "title": "Update"
+                         }
                      ]
           }

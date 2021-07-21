@@ -10,6 +10,27 @@ types:
         name: { en: "Connect", ru: "Подключить" }
         icon: link
         color: "#117f0d"
+    functions:
+      - key: CONNECT-USER
+        name: { en: "User connection", ru: "Подключение пользователя" }
+        actionName: { en: "Connect user", ru: "Подключить пользователя" }
+        allowedStateKeys:
+          - CONNECT
+        withEntityId: false
+        inputSpec: |
+                    {
+                        "type": "object",
+                        "properties": {
+                            "userFirstname": {
+                                "title": "First name",
+                                "type": "string"
+                            },
+                            "userLastName": {
+                                "title": "Last Name",
+                                "type": "string"
+                            }
+                        }
+                    }
     dataSpec: |
       {
           "type": "object",
@@ -41,7 +62,7 @@ types:
                      {
                        "type": "submit",
                        "style": "btn-info",
-                       "title": "Save"
+                       "title": "Update"
                      }
                  ]
       }
