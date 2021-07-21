@@ -9,3 +9,28 @@ types:
         name: { en: "New", ru: "Новый" }
         icon: fiber_new
         color: '#FFEB3B'
+    dataSpec: |
+          {
+              "type": "object",
+              "properties": {
+                  "userFirstname": {
+                      "title": "First name",
+                      "type": "string"
+                  },
+                  "userLastName": {
+                      "title": "Last Name",
+                      "type": "string"
+                  }
+              },
+              "required": [
+                  "userFirstname",
+                  "userLastName"
+              ]
+          }
+    dataForm: |
+          {
+              "form":[
+                         "userFirstname",
+                         "userLastName"
+                     ]
+          }

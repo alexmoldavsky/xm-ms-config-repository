@@ -35,17 +35,13 @@ types:
     dataForm: |
       {
           "form":[
-                   {
-                     "key": "tariffName",
-                     "title": "Name"
-                   },
-                   {
-                     "key": "tariffPrice",
-                     "title": "Price"
-                   },
-                   {
-                     "key": "tariffFeatures",
-                     "title": "Features"
-                   }
+                     "tariffName",
+                     "tariffPrice",
+                     "tariffFeatures",
+                     {
+                       "type": "submit",
+                       "style": "btn-info",
+                       "title": "Save"
+                     }
                  ]
       }
