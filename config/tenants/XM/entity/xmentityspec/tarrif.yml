@@ -15,7 +15,7 @@ types:
         name: { en: "User connection", ru: "Подключение пользователя" }
         actionName: { en: "Connect user", ru: "Подключить пользователя" }
         withEntityId: false
-        isShowFormWithoutData: true
+        isShowFormWithoutData: false
         inputSpec: |
                     {
                         "type": "object",
@@ -37,6 +37,16 @@ types:
                          "userLastName"
                      ]
                    }
+        contextDataSpec: |
+                         {
+                            "type": "object",
+                            "properties": {
+                               "connectedUser": {
+                                   "title": "Connected User",
+                                   "type": "string"
+                               }
+                             }
+                         }
     dataSpec: |
       {
           "type": "object",
