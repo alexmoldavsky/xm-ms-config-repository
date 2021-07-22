@@ -17,6 +17,7 @@ types:
         allowedStateKeys:
           - CONNECT
         withEntityId: false
+        isShowFormWithoutData: false
         inputSpec: |
                     {
                         "type": "object",
@@ -31,6 +32,13 @@ types:
                             }
                         }
                     }
+        inputForm: |
+                   {
+                      "form":[
+                         "userFirstname",
+                         "userLastName"
+                     ]
+                   }
     dataSpec: |
       {
           "type": "object",
