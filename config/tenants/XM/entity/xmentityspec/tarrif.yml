@@ -14,10 +14,8 @@ types:
       - key: CONNECT-USER
         name: { en: "User connection", ru: "Подключение пользователя" }
         actionName: { en: "Connect user", ru: "Подключить пользователя" }
-        allowedStateKeys:
-          - CONNECT
         withEntityId: false
-        isShowFormWithoutData: false
+        isShowFormWithoutData: true
         inputSpec: |
                     {
                         "type": "object",
