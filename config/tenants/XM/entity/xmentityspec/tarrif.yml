@@ -10,50 +10,38 @@ types:
         name: { en: "Connect", ru: "Подключить" }
         icon: link
         color: "#117f0d"
-    functions:
+    links:
       - key: CONNECT-USER
-        name: { en: "User connection", ru: "Подключение пользователя" }
-        actionName: { en: "Connect user", ru: "Подключить пользователя" }
+        builderType: SEARCH
+        name: { en: "User", ru: "Пользователь" }
+        icon: person
+        typeKey: USER
+        max: 10
+    functions:
+      - key: CHANGE-FIELD
+        name: { en: "Change price", ru: "Изменить стоимость" }
+        actionName: { en: "Change price", ru: "Изменить стоимость" }
         withEntityId: false
         isShowFormWithoutData: false
+        showResponse: true
         inputSpec: |
                     {
                         "type": "object",
                         "properties": {
-                            "userFirstname": {
-                                "title": "First name",
-                                "type": "string"
-                            },
-                            "userLastName": {
-                                "title": "Last Name",
+                            "changePrice": {
+                                "title": "New price",
                                 "type": "string"
                             }
                         }
                     }
-        inputForm: |
-                   {
-                      "form":[
-                         "userFirstname",
-                         "userLastName"
-                     ]
-                   }
-        contextDataSpec: |
-                         {
-                            "type": "object",
-                            "properties": {
-                               "connectedUser": {
-                                   "title": "Connected User",
-                                   "type": "string"
-                               }
-                             }
-                         }
-        contextDataForm: |
-                         {
-                            "form":[
-                               "userFirstname",
-                               "userLastName"
-                            ]
-                         }
+      #  inputForm: |
+       #            {
+        #              "form":[
+         #                "userFirstname",
+          #               "userLastName"
+           #          ]
+            #       }
+
     dataSpec: |
       {
           "type": "object",
