@@ -21,7 +21,7 @@ types:
       - key: CHANGE-FIELD
         name: { en: "Change price", ru: "Изменить стоимость" }
         actionName: { en: "Change price", ru: "Изменить стоимость" }
-        withEntityId: false
+        withEntityId: true
         isShowFormWithoutData: false
         showResponse: true
         inputSpec: |
