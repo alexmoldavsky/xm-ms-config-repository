@@ -14,13 +14,15 @@ log.info("entityService ${entityService}")
 
 IdOrKey idOrKey = lepContext.inArgs.idOrKey
 
-newPrice = lepContext.inArgs?.functionInput?.newPrice
+nprice = lepContext.inArgs?.functionInput?.newPrice
 
 XmEntity myEntity = entityService.findOne(idOrKey)
 
 if (myEntity.typeKey.startsWith("TARIFF")) {
 
-    myEntity.data.tariffPrice = newPrice
+    log.info("ENTITY OK!!!")
+
+    myEntity.data.tariffPrice = nprice
 
     entityService.save(myEntity)
 
