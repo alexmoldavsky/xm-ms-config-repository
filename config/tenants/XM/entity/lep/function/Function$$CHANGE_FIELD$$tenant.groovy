@@ -1,4 +1,3 @@
-import com.icthh.xm.ms.entity.domain.XmEntity
 import com.icthh.xm.ms.entity.domain.ext.IdOrKey
 import com.icthh.xm.ms.entity.service.XmEntityService
 import com.icthh.xm.ms.entity.domain.XmEntity
@@ -11,7 +10,7 @@ import com.icthh.xm.ms.entity.domain.XmEntity
 
 XmEntityService entityService = lepContext.services.xmEntity
 
-IdOrKey idOrKey = lepContext.inArgs?.idOrKey
+IdOrKey idOrKey = lepContext.inArgs.idOrKey
 
 newPrice = lepContext.inArgs?.functionInput?.newPrice
 
@@ -19,12 +18,9 @@ XmEntity myEntity = entityService.findOne(idOrKey)
 
 if (myEntity.typeKey.startsWith("TARIFF")) {
 
+    myEntity.data.tariffPrice = newPrice
 
-
-
-    tariff.data.tariffPrice = newPrice
-
-    entityService.save(tariff)
+    entityService.save(myEntity)
 
 }
 
