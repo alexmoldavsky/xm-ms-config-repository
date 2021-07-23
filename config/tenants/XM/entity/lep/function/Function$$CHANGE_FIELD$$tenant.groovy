@@ -8,6 +8,8 @@ import com.icthh.xm.ms.entity.domain.XmEntity
 
 //def log = LoggerFactory.getLogger(getClass())
 
+log.info("HELLO!!!")
+
 XmEntityService entityService = lepContext.services.xmEntity
 
 log.info("entityService ${entityService}")
@@ -20,7 +22,7 @@ XmEntity myEntity = entityService.findOne(idOrKey)
 
 if (myEntity.typeKey.startsWith("TARIFF")) {
 
-    log.info("ENTITY OK!!!")
+
 
     myEntity.data.tariffPrice = nprice
 
