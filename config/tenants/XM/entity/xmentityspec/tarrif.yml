@@ -28,7 +28,7 @@ types:
                     {
                         "type": "object",
                         "properties": {
-                            "changePrice": {
+                            "newPrice": {
                                 "title": "New price",
                                 "type": "string"
                             }
