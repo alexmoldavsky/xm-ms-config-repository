@@ -10,6 +10,8 @@ import com.icthh.xm.ms.entity.domain.XmEntity
 
 XmEntityService entityService = lepContext.services.xmEntity
 
+log.info("entityService ${entityService}")
+
 IdOrKey idOrKey = lepContext.inArgs.idOrKey
 
 newPrice = lepContext.inArgs?.functionInput?.newPrice
