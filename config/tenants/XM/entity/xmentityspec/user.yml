@@ -15,11 +15,16 @@ types:
                   "userLastName": {
                       "title": "Last Name",
                       "type": "string"
-                  }
+                  },
+                  "userEmail": {
+                                "title": "Email",
+                                "type": "string"
+                            }
               },
               "required": [
                   "userFirstname",
-                  "userLastName"
+                  "userLastName",
+                  "userEmail"
               ]
           }
     dataForm: |
@@ -27,6 +32,7 @@ types:
               "form":[
                          "userFirstname",
                          "userLastName",
+                         "userEmail",
                          {
                             "type": "submit",
                             "style": "btn-info",
