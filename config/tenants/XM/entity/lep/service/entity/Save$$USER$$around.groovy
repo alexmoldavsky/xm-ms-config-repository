@@ -13,9 +13,12 @@ if (xmEntity.typeKey.startsWith("USER")) {
 
     MailService mailService = lepContext.services.mailService
 
-    log.info("xmEntity {}", xmEntity)
+
 
     def targetEmail = xmEntity.data?.userEmail
+
+
+    log.info("######### targetEmail {}", targetEmail)
 
 //sendEmailFromTemplate(Locale locale,
     //      String templateName,
