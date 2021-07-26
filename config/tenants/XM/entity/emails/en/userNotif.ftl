@@ -6,7 +6,7 @@
 </head>
     <body>
         <p>
-            Hello ${user.firstName user.lastName}!
+            Hello ${user.firstName} ${user.lastName}!
         </p>
     </body>
 </html>
