@@ -14,7 +14,9 @@ if (xmEntity.typeKey.startsWith("USER")) {
 
     MailService mailService = lepContext.services.mailService
 
-    def targetEmail = xmEntity.data?.userEmail
+    def targetEmail = xmEntity.data.userEmail
+    def userFirstName = xmEntity.data.userFirstname
+    def userLastName = xmEntity.data.userLastName
 
 //sendEmailFromTemplate(Locale locale,
     //      String templateName,
@@ -26,7 +28,7 @@ if (xmEntity.typeKey.startsWith("USER")) {
     if (targetEmail.contains("@")) {
 
         mailService.sendEmailFromTemplate(forLanguageTag('en'), "userNotif", "XM-User notification test", targetEmail, 'xmtest@xmtest.com',
-                   ["user.firstName": xmEntity.data?.userFirstname, "user.lastName": xmEntity.data?.userLastName])
+                   ["firstName": userFirstName, "lastName": userLastName])
     }
 
     log.info("###### END: xmEntity {}", xmEntity)
