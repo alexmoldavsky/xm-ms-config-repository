@@ -10,15 +10,11 @@ def log = LoggerFactory.getLogger(getClass())
 XmEntity xmEntity = lepContext.inArgs.xmEntity
 if (xmEntity.typeKey.startsWith("USER")) {
 
+    log.info("###### BEGIN: xmEntity {}", xmEntity)
 
     MailService mailService = lepContext.services.mailService
 
-
-
     def targetEmail = xmEntity.data?.userEmail
-
-
-    log.info("######### targetEmail {}", targetEmail)
 
 //sendEmailFromTemplate(Locale locale,
     //      String templateName,
@@ -32,5 +28,7 @@ if (xmEntity.typeKey.startsWith("USER")) {
         mailService.sendEmailFromTemplate(forLanguageTag('en'), "userNotif", "XM-User notification test", targetEmail, 'xmtest@xmtest.com',
                    ["user.firstName": xmEntity.data?.userFirstname, "user.lastName": xmEntity.data?.userLastName])
     }
+
+    log.info("###### END: xmEntity {}", xmEntity)
 }
 return lepContext.lep.proceed(xmEntity)
