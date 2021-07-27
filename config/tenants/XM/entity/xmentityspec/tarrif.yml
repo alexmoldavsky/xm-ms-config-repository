@@ -63,7 +63,7 @@ types:
                                "url": "/entity/api/_search-with-typekey/xm-entities?typeKey=USER&page=0&size=100&sort=id,asc",
                                "labelField": "name",
                                "valueField": "id",
-                               "readonly": true,
+                               "readonly": false,
                                "title": { "en": "User", "ru": "Пользователь" },
                                "placeholder": { "en": "Select user", "ru": "Выберите пользователя" }
                              }
