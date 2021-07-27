@@ -64,9 +64,18 @@ types:
                                "labelField": "name",
                                "valueField": "id",
                                "readonly": false,
-                               "title": { "en": "Select user", "ru": "Выберите пользователя" }
+                               "title": { "en": "Select user", "ru": "Выберите пользователя" },
+                               "showDataFields": [{
+                                  "title": "First name",
+                                  "value": "userFirstname"
+                                 },
+                                 {
+                                  "title": "Last name",
+                                  "value": "userLastName"
+                                 }
+                               ]
                              }
-                           ]
+                            ]
                 }
     dataSpec: |
       {
