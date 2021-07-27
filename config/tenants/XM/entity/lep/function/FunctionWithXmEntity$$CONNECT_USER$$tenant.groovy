@@ -16,7 +16,7 @@ import com.icthh.xm.ms.entity.service.XmEntityService
 IdOrKey idOrKey = lepContext.inArgs.idOrKey
 XmEntityService xmEntityService = lepContext.services.xmEntity
 XmEntity xmEntity = xmEntityService.findOne(idOrKey)
-XmEntity xmUserEntity = xmEntityService.findOne(lepContext.inArgs?.functionInput?.id)
+XmEntity xmUserEntity = xmEntityService.findOne(IdOrKey.of(lepContext.inArgs?.functionInput?.id))
 
 
 LinkService linkService = lepContext.services.linkService
