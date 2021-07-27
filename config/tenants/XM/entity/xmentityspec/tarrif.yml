@@ -5,13 +5,6 @@ types:
     isApp: true
     isAbstract: false
     icon: local_atm
-    links:
-      - key: TARIFF-TO-USER
-        builderType: SEARCH
-        name: { en: "User", ru: "Пользователь" }
-        icon: person
-        typeKey: USER
-        max: 10
     functions:
       - key: CHANGE-FIELD
         name: { en: "Change price", ru: "Изменить стоимость" }

@@ -4,4 +4,17 @@ types:
     name: { en: "Connection",  ru: "Подключение" }
     isApp: true
     isAbstract: false
+    links:
+      - key: CONNECTION-TO-USER
+        builderType: SEARCH
+        name: { en: "Link to user" }
+        icon: person
+        typeKey: USER
+        max: 1
+      - key: CONNECTION-TO-TARIFF
+        builderType: SEARCH
+        name: { en: "Link to tariff" }
+        icon: local_atm
+        typeKey: TARIFF
+        max: 1
 
