@@ -60,12 +60,11 @@ types:
                              {
                                "key": "userName",
                                "type": "rest-select",
-                               "url": "/entity/api/_search-with-typekey/xm-entities?typeKey=USER&page=0&size=100&sort=id,asc",
+                               "url": "/entity/api/_search-with-typekey/xm-entities?typeKey=USER&page=0&size=100&sort=name,asc",
                                "labelField": "name",
                                "valueField": "id",
                                "readonly": false,
-                               "title": { "en": "User", "ru": "Пользователь" },
-                               "placeholder": { "en": "Select user", "ru": "Выберите пользователя" }
+                               "title": { "en": "Select user", "ru": "Выберите пользователя" }
                              }
                            ]
                 }
