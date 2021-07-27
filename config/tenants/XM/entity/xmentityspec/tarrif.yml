@@ -49,7 +49,7 @@ types:
                 }
         inputForm: |
                 {
-                    "form":[
+                    "form": [
                              {
                                "key": "userName",
                                "type": "rest-select",
@@ -57,8 +57,8 @@ types:
                                "labelField": "name",
                                "valueField": "id",
                                "readonly": false,
-                               "title": "Please, select user"
-
+                               "title": "Please, select user",
+                               "placeholder": "User name"
                              }
                             ]
                 }
