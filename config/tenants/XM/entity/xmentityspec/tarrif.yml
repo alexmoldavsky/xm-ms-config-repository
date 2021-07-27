@@ -60,7 +60,7 @@ types:
                              {
                                "key": "userName",
                                "type": "rest-select",
-                               "url": "/entity/api/xm-entities?typeKey=USER&page=0&size=100&sort=id,asc",
+                               "url": "/entity/api/_search-with-typekey/xm-entities?typeKey=USER&page=0&size=100&sort=id,asc",
                                "labelField": "name",
                                "valueField": "id",
                                "readonly": true,
