@@ -42,8 +42,8 @@ types:
                   "type": "object",
                   "properties": {
                     "userName": {
-                      "title": "User name",
-                      "type": "string"
+                      "title": "User ID",
+                      "type": ["string", "number"]
                     }
                   }
                 }
