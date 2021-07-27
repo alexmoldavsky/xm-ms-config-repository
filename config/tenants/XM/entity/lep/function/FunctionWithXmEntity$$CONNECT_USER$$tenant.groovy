@@ -16,13 +16,15 @@ import com.icthh.xm.ms.entity.service.XmEntityService
 IdOrKey idOrKey = lepContext.inArgs.idOrKey
 XmEntityService xmEntityService = lepContext.services.xmEntity
 XmEntity xmEntity = xmEntityService.findOne(idOrKey)
+XmEntity xmUserEntity = xmEntityService.findOne(lepContext.inArgs?.functionInput?.id)
+
 
 LinkService linkService = lepContext.services.linkService
 Link link = new Link()
-link.setName('TARIFF-TO-USER')
+link.setName('Link to user')
 link.setTypeKey('TARIFF-TO-USER')
 link.setStartDate(new Date().toInstant())
-link.setSource(source)
+link.setSource(xmUserEntity)
 link.setTarget(xmEntity)
 linkService.save(link)
 

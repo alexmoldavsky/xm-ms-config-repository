@@ -6,7 +6,7 @@ types:
     isAbstract: false
     icon: local_atm
     links:
-      - key: CONNECT-TO-USER
+      - key: TARIFF-TO-USER
         builderType: SEARCH
         name: { en: "User", ru: "Пользователь" }
         icon: person
@@ -29,13 +29,6 @@ types:
                             }
                         }
                     }
-      #  inputForm: |
-       #            {
-        #              "form":[
-         #                "userFirstname",
-          #               "userLastName"
-           #          ]
-            #       }
 
       - key: CONNECT-USER
         name: { en: "Connect user", ru: "Подключить пользователя" }
@@ -64,16 +57,8 @@ types:
                                "labelField": "name",
                                "valueField": "id",
                                "readonly": false,
-                               "title": { "en": "Select user", "ru": "Выберите пользователя" },
-                               "showDataFields": [{
-                                  "title": "First name",
-                                  "value": "userFirstname"
-                                 },
-                                 {
-                                  "title": "Last name",
-                                  "value": "userLastName"
-                                 }
-                               ]
+                               "title": "Please, select user"
+
                              }
                             ]
                 }
