@@ -4,3 +4,4 @@ types:
     name: { en: "Connection",  ru: "Подключение" }
     isApp: true
     isAbstract: false
+

@@ -5,13 +5,8 @@ types:
     isApp: true
     isAbstract: false
     icon: local_atm
-    states:
-      - key: CONNECT
-        name: { en: "Connect", ru: "Подключить" }
-        icon: link
-        color: "#117f0d"
     links:
-      - key: CONNECT-USER
+      - key: CONNECT-TO-USER
         builderType: SEARCH
         name: { en: "User", ru: "Пользователь" }
         icon: person
@@ -42,6 +37,38 @@ types:
            #          ]
             #       }
 
+      - key: CONNECT-USER
+        name: { en: "Connect user", ru: "Подключить пользователя" }
+        actionName: { en: "Connect user", ru: "Подключить пользователя" }
+        withEntityId: true
+        isShowFormWithoutData: false
+        showResponse: true
+        inputSpec: |
+
+                {
+                  "type": "object",
+                  "properties": {
+                    "userName": {
+                      "title": "User name",
+                      "type": "string"
+                    }
+                  }
+                }
+        inputForm: |
+                {
+                    "form":[
+                             {
+                               "key": "userName",
+                               "type": "rest-select",
+                               "url": "/entity/api/xm-entities?typeKey=USER&page=0&size=100&sort=id,asc",
+                               "labelField": "name",
+                               "valueField": "id",
+                               "readonly": true,
+                               "title": { "en": "User", "ru": "Пользователь" },
+                               "placeholder": { "en": "Select user", "ru": "Выберите пользователя" }
+                             }
+                           ]
+                }
     dataSpec: |
       {
           "type": "object",
