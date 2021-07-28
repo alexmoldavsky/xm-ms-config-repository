@@ -19,12 +19,11 @@ if (lepContext.inArgs?.functionInput?.userValue) {
 
     if (xmUserEntity) {
 
-        def connectionEntity = new XmEntity()
+        XmEntity connectionEntity = new XmEntity()
         connectionEntity.setKey(UUID.randomUUID().toString())
         connectionEntity.setName("${xmEntity.data.tariffName} ${xmUserEntity.getName()} ${LocalDateTime.now()}")
         connectionEntity.typeKey('CONNECTION')
         xmEntityService.save(connectionEntity)
-
 
         CreateLink("Link to user", "CONNECTION-TO-USER", xmUserEntity, connectionEntity)
         CreateLink("Link to tariff", "CONNECTION-TO-TARIFF", xmEntity, connectionEntity)
